@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WoundExpert.Domain.Interfaces;
-using WoundExpert.Domain.Models;
+using BackEndApi.Domain.Interfaces;
+using BackEndApi.Domain.Models;
 
-namespace WoundExpert.Api.Controllers
+namespace BackEndApi.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

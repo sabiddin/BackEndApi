@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WoundExpert.Data;
+using BackEndApi.Data;
 
-namespace WoundExpert.Data.Migrations
+namespace BackEndApi.Data.Migrations
 {
     [DbContext(typeof(WoundExpertDataContext))]
     [Migration("20191012175044_intialCreate")]

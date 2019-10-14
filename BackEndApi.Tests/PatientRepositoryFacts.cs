@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using Moq;
-using WoundExpert.Domain.Interfaces;
-using WoundExpert.Domain.Models;
+using BackEndApi.Domain.Interfaces;
+using BackEndApi.Domain.Models;
 using System.Linq;
 
 namespace BackEndApi.Tests

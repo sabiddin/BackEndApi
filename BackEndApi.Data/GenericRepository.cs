@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoundExpert.Domain.Interfaces;
+using BackEndApi.Domain.Interfaces;
 
-namespace WoundExpert.Data
+namespace BackEndApi.Data
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
        where TEntity : class, IEntity

@@ -10,10 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using WoundExpert.Data;
-using WoundExpert.Data.Repositories;
-using WoundExpert.Domain.Interfaces;
-namespace WoundExpert.Api
+using BackEndApi.Data;
+using BackEndApi.Data.Repositories;
+using BackEndApi.Domain.Interfaces;
+namespace BackEndApi.Api
 {
     public class Startup
     {
@@ -40,8 +40,8 @@ namespace WoundExpert.Api
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
                     Version = "v1",
-                    Title = "WoundExpert Api",
-                    Description = "This is the backend API for WoundExpert",
+                    Title = "BackEndApi",
+                    Description = "This is the backend API",
                     TermsOfService = "https://example.com/terms",
                     Contact = new Swashbuckle.AspNetCore.Swagger.Contact
                     {

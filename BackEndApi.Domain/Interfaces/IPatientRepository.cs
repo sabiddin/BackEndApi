@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WoundExpert.Domain.Models;
+using BackEndApi.Domain.Models;
 
-namespace WoundExpert.Domain.Interfaces
+namespace BackEndApi.Domain.Interfaces
 {
     public interface IPatientRepository: IGenericRepository<Patient>
     {

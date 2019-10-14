@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WoundExpert.Domain.Interfaces
+namespace BackEndApi.Domain.Interfaces
 {
     public interface IGenericRepository<TEntity>
          where TEntity : class
