@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WoundExpert.Domain.Interfaces
+namespace BackEndApi.Domain.Interfaces
 {
     public interface IEntity
     {

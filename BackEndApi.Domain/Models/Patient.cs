@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WoundExpert.Domain.Interfaces;
+using BackEndApi.Domain.Interfaces;
 
-namespace WoundExpert.Domain.Models
+namespace BackEndApi.Domain.Models
 {
     public class Patient: IEntity
     {

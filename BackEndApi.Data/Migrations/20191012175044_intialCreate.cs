@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WoundExpert.Data.Migrations
+namespace BackEndApi.Data.Migrations
 {
     public partial class intialCreate : Migration
     {

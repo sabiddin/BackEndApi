@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WoundExpert.Data;
+using BackEndApi.Data;
 
-namespace WoundExpert.Data.Migrations
+namespace BackEndApi.Data.Migrations
 {
     [DbContext(typeof(WoundExpertDataContext))]
     partial class WoundExpertDataContextModelSnapshot : ModelSnapshot
