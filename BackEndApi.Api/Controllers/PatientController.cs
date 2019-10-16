@@ -22,6 +22,11 @@ namespace WoundExpert.Api.Controllers
         public IActionResult Get() {
             return Ok( _patientRepository.GetAll());
         }
+        [HttpGet("GetAsync")]
+        public async Task<IActionResult> GetAsync()
+        {
+            return Ok(await _patientRepository.GetAllAsync());
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {            

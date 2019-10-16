@@ -22,6 +22,10 @@ namespace WoundExpert.Data
         {
             return _dbContext.Set<TEntity>().AsNoTracking();
         }
+        public async Task<IQueryable<TEntity>> GetAllAsync()
+        {
+            return await Task.Run(() => _dbContext.Set<TEntity>().AsNoTracking());
+        }
 
         public async Task<TEntity> GetById(int id)
         {
@@ -42,11 +46,22 @@ namespace WoundExpert.Data
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var entity = await _dbContext.Set<TEntity>().FindAsync(id);
-            _dbContext.Set<TEntity>().Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            bool success = false;
+            try
+            {
+                var entity = await _dbContext.Set<TEntity>().FindAsync(id);
+                _dbContext.Set<TEntity>().Remove(entity);
+                await _dbContext.SaveChangesAsync();
+                success = true;
+            }
+            catch (Exception ex)
+            {                
+            }
+            return success;
         }
+
+      
     }
 }

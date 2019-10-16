@@ -11,12 +11,14 @@ namespace WoundExpert.Domain.Interfaces
     {
         IQueryable<TEntity> GetAll();
 
+        Task<IQueryable<TEntity>> GetAllAsync();
+
         Task<TEntity> GetById(int id);
 
         Task Create(TEntity entity);
 
         Task Update(int id, TEntity entity);
 
-        Task Delete(int id);
+        Task<bool> Delete(int id);
     }
 }
