@@ -36,19 +36,28 @@ namespace BackEndApi.Api.Controllers
         public async Task<IActionResult> Post(Patient model)
         {
             await _patientRepository.Create(model);
-            return Ok(true);
+            return Ok(new
+            {
+                message = "Patient added successfully."
+            });
         }
         [HttpPut]
         public async Task<IActionResult> Put(int id,Patient model)
         {          
             await _patientRepository.Update(id,model);
-            return Ok(true);
+            return Ok(new
+            {
+                message = "Patient is updated successfully."
+            });
         }
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
             await _patientRepository.Delete(id);
-            return Ok(true);
+            return Ok(new
+            {
+                message = "Patient is deleted successfully."
+            });
         }
 
     }
