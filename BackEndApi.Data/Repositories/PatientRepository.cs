@@ -8,7 +8,7 @@ namespace BackEndApi.Data.Repositories
 {
     public class PatientRepository : GenericRepository<Patient>, IPatientRepository
     {
-        public PatientRepository(WoundExpertDataContext dbContext) : base(dbContext)
+        public PatientRepository(BackEndApiDataContext dbContext) : base(dbContext)
         {
         }
     }

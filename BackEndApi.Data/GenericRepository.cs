@@ -11,9 +11,9 @@ namespace BackEndApi.Data
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
        where TEntity : class, IEntity
     {
-        private readonly WoundExpertDataContext _dbContext;
+        private readonly BackEndApiDataContext _dbContext;
 
-        public GenericRepository(WoundExpertDataContext dbContext)
+        public GenericRepository(BackEndApiDataContext dbContext)
         {
             _dbContext = dbContext;
         }

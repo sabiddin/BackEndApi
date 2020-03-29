@@ -8,8 +8,8 @@ using BackEndApi.Data;
 
 namespace BackEndApi.Data.Migrations
 {
-    [DbContext(typeof(WoundExpertDataContext))]
-    partial class WoundExpertDataContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(BackEndApiDataContext))]
+    partial class BackEndApiDataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

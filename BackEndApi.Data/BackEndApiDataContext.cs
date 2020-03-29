@@ -7,9 +7,9 @@ using BackEndApi.Domain.Models;
 
 namespace BackEndApi.Data
 {
-    public class WoundExpertDataContext : DbContext
+    public class BackEndApiDataContext : DbContext
     {
-        public WoundExpertDataContext(DbContextOptions<WoundExpertDataContext> options) : base(options)
+        public BackEndApiDataContext(DbContextOptions<BackEndApiDataContext> options) : base(options)
         {
         }
         public DbSet<Patient> Patients { get; set; }

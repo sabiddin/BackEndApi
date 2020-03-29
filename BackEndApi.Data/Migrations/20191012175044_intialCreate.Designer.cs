@@ -9,7 +9,7 @@ using BackEndApi.Data;
 
 namespace BackEndApi.Data.Migrations
 {
-    [DbContext(typeof(WoundExpertDataContext))]
+    [DbContext(typeof(BackEndApiDataContext))]
     [Migration("20191012175044_intialCreate")]
     partial class intialCreate
     {
